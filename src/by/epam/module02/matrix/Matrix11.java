@@ -19,7 +19,7 @@ public class Matrix11 {
 		findLineThatRepeatsANumbers5(matrix);
 	}
 
-	public static int[][] getRandomMatrix10x20() {
+	private static int[][] getRandomMatrix10x20() {
 		int width;
 		int height;
 		int[][] matrix;
@@ -34,7 +34,7 @@ public class Matrix11 {
 		return matrix;
 	}
 
-	public static void fillMatrixWithRandomValues(int[][] matrix) {
+	private static void fillMatrixWithRandomValues(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -46,21 +46,21 @@ public class Matrix11 {
 		}
 	}
 
-	public static void printMatrix(int[][] matrix) {
+	private static void printMatrix(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
 
 		for (int i = 0; i < matrix.length; i++) {
 			for (int j = 0; j < matrix[i].length; j++) {
-				System.out.printf("%2d ", matrix[i][j]);
+				System.out.printf("%3d ", matrix[i][j]);
 			}
 
 			System.out.println();
 		}
 	}
 
-	public static void findLineThatRepeatsANumbers5(int[][] matrix) {
+	private static void findLineThatRepeatsANumbers5(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}

@@ -28,7 +28,7 @@ public class Decomposition11 {
 
 	}
 
-	public static void comparewNmbers(double value1, double value2) {
+	private static void comparewNmbers(double value1, double value2) {
 		int size1;
 		int size2;
 
@@ -48,7 +48,7 @@ public class Decomposition11 {
 		}
 	}
 
-	public static int countTheNumberOfDigits(double value) {
+	private static int countTheNumberOfDigits(double value) {
 		int size;
 		int temp;
 

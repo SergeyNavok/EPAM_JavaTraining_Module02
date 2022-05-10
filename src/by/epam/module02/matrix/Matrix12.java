@@ -16,20 +16,21 @@ public class Matrix12 {
 
 		matrix = getRandomMatrix(size);
 
+		System.out.println("Default matrix:");
 		printMatrix(matrix);
 
 		System.out.println();
-		System.out.println("Sort values in a rows in ascending order");
+		System.out.println("Sort values in a rows in ascending order:");
 		sortMatrixRowValuesInAscendingOrder(matrix);
 		printMatrix(matrix);
 
 		System.out.println();
-		System.out.println("Sort values in a rows in descending order");
+		System.out.println("Sort values in a rows in descending order:");
 		sortMatrixRowValuesInDescendingOrder(matrix);
 		printMatrix(matrix);
 	}
 
-	public static int[][] getRandomMatrix(int value) {
+	private static int[][] getRandomMatrix(int value) {
 		if (value < 2) {
 			System.out.println("Matrix size cannot be less than 2!");
 
@@ -45,7 +46,7 @@ public class Matrix12 {
 		return matrix;
 	}
 
-	public static void fillMatrixWithRandomValues(int[][] matrix) {
+	private static void fillMatrixWithRandomValues(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -57,7 +58,7 @@ public class Matrix12 {
 		}
 	}
 
-	public static void printMatrix(int[][] matrix) {
+	private static void printMatrix(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -71,7 +72,7 @@ public class Matrix12 {
 		}
 	}
 
-	public static void sortMatrixRowValuesInAscendingOrder(int[][] matrix) {
+	private static void sortMatrixRowValuesInAscendingOrder(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -98,7 +99,7 @@ public class Matrix12 {
 		}
 	}
 
-	public static void sortMatrixRowValuesInDescendingOrder(int[][] matrix) {
+	private static void sortMatrixRowValuesInDescendingOrder(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}

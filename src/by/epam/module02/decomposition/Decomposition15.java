@@ -12,20 +12,24 @@ public class Decomposition15 {
 
 		n = 0;
 		findIncreasingSequence(n);
+		System.out.println();
 
 		n = 1;
 		findIncreasingSequence(n);
+		System.out.println();
 
 		n = 3;
 		findIncreasingSequence(n);
+		System.out.println();
 	}
 
-	public static void findIncreasingSequence(int degree) {
+	private static void findIncreasingSequence(int degree) {
 		int start;
 		int finish;
 
 		if (degree < 1) {
 			System.out.println("Wrong number!");
+
 			return;
 		}
 
@@ -42,7 +46,7 @@ public class Decomposition15 {
 		}
 	}
 
-	public static void printNumbersWithIncreasingDigits(int number) {
+	private static void printNumbersWithIncreasingDigits(int number) {
 		int temp1;
 		int temp2;
 		int value;
@@ -54,6 +58,7 @@ public class Decomposition15 {
 			temp2 = value % 10;
 
 			if (temp2 >= temp1) {
+
 				return;
 			}
 

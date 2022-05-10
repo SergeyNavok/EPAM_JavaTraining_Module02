@@ -20,7 +20,7 @@ public class Array01 {
 		findSum(array, number);
 	}
 
-	public static void findSum(int[] array, int number) {
+	private static void findSum(int[] array, int number) {
 		int sum;
 
 		sum = 0;

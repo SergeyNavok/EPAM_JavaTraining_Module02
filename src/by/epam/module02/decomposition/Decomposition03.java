@@ -17,7 +17,7 @@ public class Decomposition03 {
 		printHexagonArea(a);
 	}
 
-	public static void printHexagonArea(int a) {
+	private static void printHexagonArea(int a) {
 		if (a <= 0) {
 			System.out.println("Invalid value!");
 

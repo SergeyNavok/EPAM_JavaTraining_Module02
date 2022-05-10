@@ -20,7 +20,7 @@ public class Decomposition16 {
 		printSumOfNumber(n);
 	}
 
-	public static void printSumOfNumber(int number) {
+	private static void printSumOfNumber(int number) {
 		int sumOfOdd;
 		int numberOfEven;
 
@@ -31,7 +31,7 @@ public class Decomposition16 {
 				+ ", of which are even numbers - " + numberOfEven);
 	}
 
-	public static int getSumOfOddDigitsInNumber(int number) {
+	private static int getSumOfOddDigitsInNumber(int number) {
 		int digit;
 		int sum;
 
@@ -51,7 +51,7 @@ public class Decomposition16 {
 		return sum;
 	}
 
-	public static int getNumberOfEvenNumbers(int number) {
+	private static int getNumberOfEvenNumbers(int number) {
 		int digit;
 		int result;
 

@@ -29,7 +29,7 @@ public class Matrix13 {
 		printMatrix(matrix);
 	}
 
-	public static int[][] getRandomMatrix(int value) {
+	private static int[][] getRandomMatrix(int value) {
 		if (value < 2) {
 			System.out.println("Matrix size cannot be less than 2!");
 
@@ -45,7 +45,7 @@ public class Matrix13 {
 		return matrix;
 	}
 
-	public static void fillMatrixWithRandomValues(int[][] matrix) {
+	private static void fillMatrixWithRandomValues(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -57,7 +57,7 @@ public class Matrix13 {
 		}
 	}
 
-	public static void printMatrix(int[][] matrix) {
+	private static void printMatrix(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -71,7 +71,7 @@ public class Matrix13 {
 		}
 	}
 
-	public static void sortMatrixColumnValuesInAscendingOrder(int[][] matrix) {
+	private static void sortMatrixColumnValuesInAscendingOrder(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -98,7 +98,7 @@ public class Matrix13 {
 		}
 	}
 
-	public static void sortMatrixColumnValuesInDescendingOrder(int[][] matrix) {
+	private static void sortMatrixColumnValuesInDescendingOrder(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}

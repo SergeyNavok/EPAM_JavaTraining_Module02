@@ -17,7 +17,7 @@ public class Decomposition17 {
 		subtractSumOfNumbers(number);
 	}
 
-	public static void subtractSumOfNumbers(int number) {
+	private static void subtractSumOfNumbers(int number) {
 		int counter;
 		int value;
 		int sumOfDigits;
@@ -35,7 +35,7 @@ public class Decomposition17 {
 				+ sumOfDigits + " until you get '0' - " + counter + " times");
 	}
 
-	public static int getSumOfDigitsOfNumber(int number) {
+	private static int getSumOfDigitsOfNumber(int number) {
 		int result;
 
 		result = 0;

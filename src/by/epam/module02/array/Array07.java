@@ -22,7 +22,7 @@ public class Array07 {
 		printMaxPairInArray(array);
 	}
 
-	public static void printMaxPairInArray(double[] array) {
+	private static void printMaxPairInArray(double[] array) {
 		int index;
 		double oddValue;
 		double maxValue;

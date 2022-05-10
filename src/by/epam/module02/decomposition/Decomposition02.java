@@ -31,7 +31,7 @@ public class Decomposition02 {
 		leastCommonDivisor(a, b, c, d);
 	}
 
-	public static boolean isDifferentNumber(int a, int b, int c, int d) {
+	private static boolean isDifferentNumber(int a, int b, int c, int d) {
 		if (a != b || b != c || c != d) {
 			return true;
 		}
@@ -39,7 +39,7 @@ public class Decomposition02 {
 		return false;
 	}
 
-	public static boolean isCorrectNumber(int a, int b, int c, int d) {
+	private static boolean isCorrectNumber(int a, int b, int c, int d) {
 		if (a == 0 || b == 0 || c == 0 || d == 0) {
 			return false;
 		}
@@ -47,7 +47,7 @@ public class Decomposition02 {
 		return true;
 	}
 
-	public static int greatestCommonMultiple(int a, int b) {
+	private static int greatestCommonMultiple(int a, int b) {
 		int temp;
 
 		while (b != 0) {
@@ -59,7 +59,7 @@ public class Decomposition02 {
 		return a;
 	}
 
-	public static void leastCommonDivisor(int a, int b, int c, int d) {
+	private static void leastCommonDivisor(int a, int b, int c, int d) {
 		if (!isDifferentNumber(a, b, c, d)) {
 			System.out.println("The numbers are the same!");
 

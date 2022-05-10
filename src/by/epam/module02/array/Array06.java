@@ -19,7 +19,7 @@ public class Array06 {
 		printSumPrimeNumber(array);
 	}
 
-	public static void printSumPrimeNumber(double[] array) {
+	private static void printSumPrimeNumber(double[] array) {
 		int elemArray;
 		int firstPrimeNumber;
 		double sumPrimeNumber;
@@ -42,7 +42,7 @@ public class Array06 {
 		System.out.println("The sum of prime numbers of ordinal numbers of elements = " + sumPrimeNumber);
 	}
 
-	public static boolean isPrimeNumber(int a) {
+	private static boolean isPrimeNumber(int a) {
 		int firstPrimeNumber;
 
 		firstPrimeNumber = 2;

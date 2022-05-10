@@ -26,7 +26,7 @@ public class Matrix01 {
 		printColumnsMatchingCondition(matrix);
 	}
 
-	public static void fillWithRandomPositiveValues(int[][] matrix) {
+	private static void fillWithRandomPositiveValues(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -38,7 +38,7 @@ public class Matrix01 {
 		}
 	}
 
-	public static void printMatrix(int[][] matrix) {
+	private static void printMatrix(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -52,7 +52,7 @@ public class Matrix01 {
 		}
 	}
 
-	public static void printColumnsMatchingCondition(int[][] matrix) {
+	private static void printColumnsMatchingCondition(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -70,10 +70,12 @@ public class Matrix01 {
 		}
 	}
 
-	public static void printColumn(int[][] matrix, int column) {
+	private static void printColumn(int[][] matrix, int column) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
+
+		System.out.println("Column " + column + " matches the condition:");
 
 		for (int i = 0; i < matrix.length; i++) {
 			System.out.println(matrix[i][column]);

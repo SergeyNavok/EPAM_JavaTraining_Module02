@@ -18,7 +18,7 @@ public class Decomposition13 {
 		findTwinNumbers(n);
 	}
 
-	public static void findTwinNumbers(int n) {
+	private static void findTwinNumbers(int n) {
 		if (n < 1) {
 			System.out.println("Numbers are not natural!");
 			return;
@@ -35,7 +35,7 @@ public class Decomposition13 {
 			value = i + 2;
 
 			if (value <= finish) {
-				System.out.println("for number " + i + " twin " + value);
+				System.out.println("	for number " + i + " twin " + value);
 			}
 		}
 	}

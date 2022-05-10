@@ -23,7 +23,7 @@ public class Matrix15 {
 		printMatrix(matrix);
 	}
 
-	public static int[][] getRandomMatrix(int value) {
+	private static int[][] getRandomMatrix(int value) {
 		if (value < 2) {
 			System.out.println("Matrix size cannot be less than 2!");
 
@@ -39,7 +39,7 @@ public class Matrix15 {
 		return matrix;
 	}
 
-	public static void fillMatrixWithRandomValues(int[][] matrix) {
+	private static void fillMatrixWithRandomValues(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -51,7 +51,7 @@ public class Matrix15 {
 		}
 	}
 
-	public static void printMatrix(int[][] matrix) {
+	private static void printMatrix(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -67,7 +67,7 @@ public class Matrix15 {
 		System.out.println();
 	}
 
-	public static void replaceOddValues​WithLargestValue(int[][] matrix) {
+	private static void replaceOddValues​WithLargestValue(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -86,7 +86,7 @@ public class Matrix15 {
 		}
 	}
 
-	public static int findMaxValue(int[][] matrix) {
+	private static int findMaxValue(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return 0;
 		}

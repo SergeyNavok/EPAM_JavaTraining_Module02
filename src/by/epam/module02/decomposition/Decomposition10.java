@@ -26,7 +26,7 @@ public class Decomposition10 {
 		createNewArray(size, value);
 	}
 
-	public static void createNewArray(int size, int value) {
+	private static void createNewArray(int size, int value) {
 		if (size < 1) {
 			System.out.println("Wrong array size!");
 

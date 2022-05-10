@@ -15,7 +15,7 @@ public class Matrix14 {
 		printMatrix(matrix);
 	}
 
-	public static int[][] getRandomMatrix() {
+	private static int[][] getRandomMatrix() {
 		int height;
 		int width;
 		int[][] matrix;
@@ -30,7 +30,7 @@ public class Matrix14 {
 		return matrix;
 	}
 
-	public static void fillMatrixWithRandomValues(int[][] matrix) {
+	private static void fillMatrixWithRandomValues(int[][] matrix) {
 		if (matrix.length < matrix[0].length) {
 			System.out.println("Matrix does not match the condition!");
 
@@ -50,7 +50,7 @@ public class Matrix14 {
 		}
 	}
 
-	public static void printMatrix(int[][] matrix) {
+	private static void printMatrix(int[][] matrix) {
 		for (int i = 0; i < matrix.length; i++) {
 			for (int j = 0; j < matrix[i].length; j++) {
 				System.out.print(matrix[i][j] + " ");
@@ -60,7 +60,7 @@ public class Matrix14 {
 		}
 	}
 
-	public static int getSumValuesInColumn(int[][] matrix, int column) {
+	private static int getSumValuesInColumn(int[][] matrix, int column) {
 		int sum;
 
 		sum = 0;

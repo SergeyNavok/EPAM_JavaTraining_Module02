@@ -26,7 +26,7 @@ public class Decomposition09 {
 		calculateArea(x, y, z, t);
 	}
 
-	public static void calculateArea(int x, int y, int z, int t) {
+	private static void calculateArea(int x, int y, int z, int t) {
 		if (!isCorrectValue(x, y, z, t)) {
 			System.out.println("Wrong sides!");
 			System.out.println();
@@ -46,7 +46,7 @@ public class Decomposition09 {
 		System.out.println();
 	}
 
-	public static boolean isCorrectValue(int x, int y, int z, int t) {
+	private static boolean isCorrectValue(int x, int y, int z, int t) {
 		if (x > 0 && y > 0 && z > 0 && t > 0) {
 			return true;
 		}

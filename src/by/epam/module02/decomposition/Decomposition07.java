@@ -18,7 +18,7 @@ public class Decomposition07 {
 		System.out.println("Sum of odd factorials from 1 to 9 = " + sum);
 	}
 
-	public static long getFactorial(int a) {
+	private static long getFactorial(int a) {
 		long result;
 
 		result = 1;

@@ -44,7 +44,7 @@ public class Sorting02 {
 		concatenateSortedArrays(array1, array2);
 	}
 
-	public static void concatenateSortedArrays(int[] array1, int[] array2) {
+	private static void concatenateSortedArrays(int[] array1, int[] array2) {
 		if (!isSortedArray(array1) || !isSortedArray(array2)) {
 			System.out.println("Array does not match the condition!");
 			System.out.println();
@@ -89,7 +89,7 @@ public class Sorting02 {
 		System.out.println();
 	}
 
-	public static boolean isSortedArray(int[] array) {
+	private static boolean isSortedArray(int[] array) {
 		if (array.length < 1) {
 			return false;
 		}

@@ -17,17 +17,23 @@ public class Decomposition05 {
 		array = new int[] { 1 };
 		printSecondLargestValueInArray(array);
 
-		array = new int[] { 1, 2 };
+		array = new int[] { 1, 1, 1 };
 		printSecondLargestValueInArray(array);
 
-		array = new int[] { 1, 1, 1 };
+		array = new int[] { 1, 2 };
 		printSecondLargestValueInArray(array);
 
 		array = new int[] { 1, 2, 3, 4, 5 };
 		printSecondLargestValueInArray(array);
+
+		array = new int[] { 5, 4, 3, 2, 1 };
+		printSecondLargestValueInArray(array);
+
+		array = new int[] { 5, 4 };
+		printSecondLargestValueInArray(array);
 	}
 
-	public static void printSecondLargestValueInArray(int[] array) {
+	private static void printSecondLargestValueInArray(int[] array) {
 		if (array.length < 2) {
 			System.out.println("There are not enough numbers in the array: " + Arrays.toString(array));
 
@@ -41,22 +47,35 @@ public class Decomposition05 {
 		}
 
 		int maxValue;
-		int secondValue;
+		int secondMaxValue;
 
 		maxValue = array[0];
-		secondValue = maxValue;
+		secondMaxValue = getSecondMaxValue(array, maxValue);
+
+		if (maxValue == secondMaxValue) {
+			maxValue = array[1];
+			secondMaxValue = getSecondMaxValue(array, maxValue);
+		}
+
+		System.out.println("Second largest value in array: " + Arrays.toString(array) + " = " + secondMaxValue);
+	}
+
+	private static int getSecondMaxValue(int[] array, int maxValue) {
+		int secondMaxValue;
+
+		secondMaxValue = maxValue;
 
 		for (int value : array) {
 			if (value > maxValue) {
-				secondValue = maxValue;
+				secondMaxValue = maxValue;
 				maxValue = value;
 			}
 		}
 
-		System.out.println("Second largest value in array: " + Arrays.toString(array) + " = " + secondValue);
+		return secondMaxValue;
 	}
 
-	public static boolean isDifferentMeanings(int[] array) {
+	private static boolean isDifferentMeanings(int[] array) {
 		for (int i = 1; i < array.length; i++) {
 			if (array[i] != array[i - 1]) {
 				return true;

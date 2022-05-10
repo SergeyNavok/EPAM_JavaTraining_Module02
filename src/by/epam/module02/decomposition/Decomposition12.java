@@ -30,7 +30,7 @@ public class Decomposition12 {
 		generateArray(k, n);
 	}
 
-	public static void generateArray(int k, int n) {
+	private static void generateArray(int k, int n) {
 		int size;
 		int value;
 		int[] array;
@@ -62,7 +62,7 @@ public class Decomposition12 {
 		System.out.println("Array: " + Arrays.toString(array) + ", k = " + k + ", n = " + n);
 	}
 
-	public static int getSize(int k, int n) {
+	private static int getSize(int k, int n) {
 		int size;
 
 		size = k / n;

@@ -23,7 +23,7 @@ public class Array09 {
 		findRepaetNumberInArray(array);
 	}
 
-	public static void findRepaetNumberInArray(int[] array) {
+	private static void findRepaetNumberInArray(int[] array) {
 		int index1;
 		int index2;
 		int value1;

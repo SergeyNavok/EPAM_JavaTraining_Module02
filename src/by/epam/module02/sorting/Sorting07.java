@@ -36,33 +36,33 @@ public class Sorting07 {
 		specifyIndexesToMerge(array1, array2);
 	}
 
-	public static void specifyIndexesToMerge(int[] array1, int[] array2) {
+	private static void specifyIndexesToMerge(int[] array1, int[] array2) {
 		if (!isCorrectSequences(array1) && !isCorrectSequences(array2)) {
 			System.out.println("Sequence does not match!\n");
 			return;
 		}
 
-		System.out.println("Array 1: " + Arrays.toString(array1));
-		System.out.println("Array 2: " + Arrays.toString(array2));
+		System.out.println("Array A: " + Arrays.toString(array1));
+		System.out.println("Array B: " + Arrays.toString(array2));
 
 		for (int i = 0; i < array2.length; i++) {
 			for (int j = 0; j < array1.length; j++) {
 				if (array2[i] < array1[j]) {
-					System.out.println("The value " + array2[i] + " of the array2 must be put at the index " + j
-							+ " of the array1");
+					System.out.println("The value " + array2[i] + " of the array B must be put at the index " + j
+							+ " of the array A");
 					break;
 				}
 			}
 		}
 
 		if (array1.length - 1 < 1) {
-			System.out.println("The remaining values ​​of the array2 must be placed at the end of the array1");
+			System.out.println("The remaining values of the array B must be placed at the end of the array A");
 		}
 
 		System.out.println();
 	}
 
-	public static boolean isCorrectSequences(int[] array) {
+	private static boolean isCorrectSequences(int[] array) {
 		if (array.length == 0) {
 			return false;
 		}

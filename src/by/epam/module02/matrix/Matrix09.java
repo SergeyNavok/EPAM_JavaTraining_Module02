@@ -22,7 +22,7 @@ public class Matrix09 {
 		findMaxSumInColumn(matrix);
 	}
 
-	public static int[][] getRandomMatrix(int value) {
+	private static int[][] getRandomMatrix(int value) {
 		if (value < 2) {
 			System.out.println("Matrix size cannot be less than 2!");
 
@@ -38,7 +38,7 @@ public class Matrix09 {
 		return matrix;
 	}
 
-	public static void fillMatrixWithPositiveValues(int[][] matrix) {
+	private static void fillMatrixWithPositiveValues(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -50,7 +50,7 @@ public class Matrix09 {
 		}
 	}
 
-	public static void printMatrix(int[][] matrix) {
+	private static void printMatrix(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -64,7 +64,7 @@ public class Matrix09 {
 		}
 	}
 
-	public static void findMaxSumInColumn(int[][] matrix) {
+	private static void findMaxSumInColumn(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -88,10 +88,10 @@ public class Matrix09 {
 			sum = 0;
 		}
 
-		System.out.println("MAX SUM = " + sumMax + " IN COLUMN - " + column);
+		System.out.println("Max sum = " + sumMax + " in column - " + column);
 	}
 
-	public static int getSumInColumn(int[][] matrix, int column) {
+	private static int getSumInColumn(int[][] matrix, int column) {
 		if (Objects.isNull(matrix)) {
 			return 0;
 		}

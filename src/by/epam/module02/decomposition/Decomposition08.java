@@ -21,7 +21,7 @@ public class Decomposition08 {
 		printSumThreeNumbersFromArray(array);
 	}
 
-	public static void printSumThreeNumbersFromArray(int[] array) {
+	private static void printSumThreeNumbersFromArray(int[] array) {
 		if (array.length < 2) {
 			System.out.println("Array does not match the condition!");
 			System.out.println();

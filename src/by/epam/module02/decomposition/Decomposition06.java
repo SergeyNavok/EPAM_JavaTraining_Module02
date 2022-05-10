@@ -27,7 +27,7 @@ public class Decomposition06 {
 		checkNumbers(a, b, c);
 	}
 
-	public static void checkNumbers(int a, int b, int c) {
+	private static void checkNumbers(int a, int b, int c) {
 		if (!isDifferentNumbers(a, b, c)) {
 			System.out.println("All numbers (" + a + ", " + b + ", " + c + ") are the same!");
 
@@ -47,7 +47,7 @@ public class Decomposition06 {
 		}
 	}
 
-	public static boolean isDifferentNumbers(int a, int b, int c) {
+	private static boolean isDifferentNumbers(int a, int b, int c) {
 		if (a != b && b != c) {
 			return true;
 		}
@@ -55,7 +55,7 @@ public class Decomposition06 {
 		return false;
 	}
 
-	public static int greatestCommonMultiple(int a, int b) {
+	private static int greatestCommonMultiple(int a, int b) {
 		int temp;
 
 		while (b != 0) {

@@ -23,7 +23,7 @@ public class Matrix07 {
 		countPositiveElements(matrix);
 	}
 
-	public static double[][] getSquareMatrix(int n) {
+	private static double[][] getSquareMatrix(int n) {
 		if (n < 2) {
 			System.out.println("n - does not match the condition");
 
@@ -45,7 +45,7 @@ public class Matrix07 {
 		return matrix;
 	}
 
-	public static void printMatrix(double[][] matrix) {
+	private static void printMatrix(double[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -59,7 +59,7 @@ public class Matrix07 {
 		}
 	}
 
-	public static void countPositiveElements(double[][] matrix) {
+	private static void countPositiveElements(double[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}

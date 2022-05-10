@@ -38,7 +38,7 @@ public class Matrix16 {
 		printMatrix(matrix);
 	}
 
-	public static void printMatrix(int[][] matrix) {
+	private static void printMatrix(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -54,7 +54,7 @@ public class Matrix16 {
 		System.out.println();
 	}
 
-	public static int[][] getMagicSquare(int value) {
+	private static int[][] getMagicSquare(int value) {
 		if (value < 3) {
 			System.out.println("Eincorrect magic square dimension!");
 
@@ -72,7 +72,7 @@ public class Matrix16 {
 		return magicSquare;
 	}
 
-	public static int[][] magicSquareOfEvenOrder(int value) {
+	private static int[][] magicSquareOfEvenOrder(int value) {
 		int count1;
 		int count2;
 		int[][] matrix;
@@ -98,7 +98,7 @@ public class Matrix16 {
 		return matrix;
 	}
 
-	public static int[][] magicSquareOfOddOrder(int value) {
+	private static int[][] magicSquareOfOddOrder(int value) {
 		int i;
 		int j;
 		int[][] matrix;

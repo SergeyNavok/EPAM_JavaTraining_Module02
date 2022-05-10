@@ -15,7 +15,7 @@ public class Decomposition14 {
 		findArmstrongNumber(k);
 	}
 
-	public static void findArmstrongNumber(int k) {
+	private static void findArmstrongNumber(int k) {
 		if (k < 1) {
 			System.out.println("Wrong number!");
 			return;
@@ -28,7 +28,7 @@ public class Decomposition14 {
 		}
 	}
 
-	public static void printArmstrongNumber(int k) {
+	private static void printArmstrongNumber(int k) {
 		int digit;
 		int degree;
 		int result;

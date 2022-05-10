@@ -29,7 +29,7 @@ public class Sorting01 {
 		concatenateArraysAtIndex(indexToReplace, array1, array2);
 	}
 
-	public static void concatenateArraysAtIndex(int indexToReplace, int[] array1, int[] array2) {
+	private static void concatenateArraysAtIndex(int indexToReplace, int[] array1, int[] array2) {
 		if (array1.length < indexToReplace) {
 			System.out.println("The first array has less than " + indexToReplace + " elements!\n");
 			return;

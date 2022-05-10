@@ -20,7 +20,7 @@ public class Array02 {
 		replaceNumberInArray(array, number);
 	}
 
-	public static void replaceNumberInArray(double[] array, double number) {
+	private static void replaceNumberInArray(double[] array, double number) {
 		int counter;
 		double[] arrayCopy;
 
@@ -37,5 +37,6 @@ public class Array02 {
 		System.out.println("Old array: " + Arrays.toString(array));
 		System.out.println("New array: " + Arrays.toString(arrayCopy));
 		System.out.println("Number of substitutions = " + counter);
+		System.out.println();
 	}
 }

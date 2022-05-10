@@ -21,7 +21,7 @@ public class Matrix10 {
 		findPositiveDiagonalElements(matrix);
 	}
 
-	public static int[][] getRandomMatrix(int value) {
+	private static int[][] getRandomMatrix(int value) {
 		if (value < 2) {
 			System.out.println("Matrix size cannot be less than 2!");
 
@@ -37,7 +37,7 @@ public class Matrix10 {
 		return matrix;
 	}
 
-	public static void fillMatrixWithRandomValues(int[][] matrix) {
+	private static void fillMatrixWithRandomValues(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -55,7 +55,7 @@ public class Matrix10 {
 		}
 	}
 
-	public static void printMatrix(int[][] matrix) {
+	private static void printMatrix(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -67,9 +67,11 @@ public class Matrix10 {
 
 			System.out.println();
 		}
+
+		System.out.println();
 	}
 
-	public static void findPositiveDiagonalElements(int[][] matrix) {
+	private static void findPositiveDiagonalElements(int[][] matrix) {
 		if (!isSquareMatrix(matrix)) {
 			System.out.println("Matrix is not square!");
 
@@ -90,7 +92,7 @@ public class Matrix10 {
 		}
 	}
 
-	public static boolean isSquareMatrix(int[][] matrix) {
+	private static boolean isSquareMatrix(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return false;
 		}

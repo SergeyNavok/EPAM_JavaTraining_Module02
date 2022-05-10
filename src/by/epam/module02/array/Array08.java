@@ -31,12 +31,14 @@ public class Array08 {
 		getNewArray(array);
 	}
 
-	public static void getNewArray(int[] array) {
+	private static void getNewArray(int[] array) {
 		int minValue;
 		int index;
 
 		if (array.length < 2) {
-			System.out.println("Wrong array!\n");
+			System.out.println("Wrong array!");
+			System.out.println();
+
 			return;
 		}
 

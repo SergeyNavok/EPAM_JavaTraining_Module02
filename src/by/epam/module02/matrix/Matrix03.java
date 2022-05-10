@@ -38,7 +38,7 @@ public class Matrix03 {
 		printColumn(matrix, column);
 	}
 
-	public static void fillWithRandomPositiveValues(int[][] matrix) {
+	private static void fillWithRandomPositiveValues(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -50,7 +50,7 @@ public class Matrix03 {
 		}
 	}
 
-	public static void printMatrix(int[][] matrix) {
+	private static void printMatrix(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -64,7 +64,7 @@ public class Matrix03 {
 		}
 	}
 
-	public static void printLine(int[][] matrix, int value) {
+	private static void printLine(int[][] matrix, int value) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -80,6 +80,8 @@ public class Matrix03 {
 			return;
 		}
 
+		System.out.println("Line " + value + ":");
+
 		for (int i = 0; i < matrix[0].length; i++) {
 			System.out.print(matrix[line][i] + " ");
 		}
@@ -88,7 +90,7 @@ public class Matrix03 {
 		System.out.println();
 	}
 
-	public static void printColumn(int[][] matrix, int value) {
+	private static void printColumn(int[][] matrix, int value) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -103,6 +105,8 @@ public class Matrix03 {
 
 			return;
 		}
+
+		System.out.println("Column " + value + ":");
 
 		for (int i = 0; i < matrix.length; i++) {
 			System.out.println(matrix[i][column]);

@@ -30,7 +30,7 @@ public class Matrix08 {
 		printMatrix(matrix);
 	}
 
-	public static int getPositiveIntUserInput(String message) {
+	private static int getPositiveIntUserInput(String message) {
 		int value;
 
 		value = 0;
@@ -51,7 +51,7 @@ public class Matrix08 {
 		return value;
 	}
 
-	public static void fillWithRandomPositiveValues(int[][] matrix) {
+	private static void fillWithRandomPositiveValues(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -63,7 +63,7 @@ public class Matrix08 {
 		}
 	}
 
-	public static void printMatrix(int[][] matrix) {
+	private static void printMatrix(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -77,7 +77,7 @@ public class Matrix08 {
 		}
 	}
 
-	public static void swapColumnsInMatrix(int[][] matrix) {
+	private static void swapColumnsInMatrix(int[][] matrix) {
 		int columnA;
 		int columnB;
 		int temp;

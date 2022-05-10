@@ -32,7 +32,7 @@ public class Decomposition04 {
 		findGreatestDistance(points);
 	}
 
-	public static void findGreatestDistance(Point[] points) {
+	private static void findGreatestDistance(Point[] points) {
 		if (points.length < 2) {
 			System.out.println("Small number of points in the array!");
 

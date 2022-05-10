@@ -27,9 +27,10 @@ public class Matrix04 {
 		printMatrix(matrix);
 	}
 
-	public static int[][] getSquareMatrix(int value) {
+	private static int[][] getSquareMatrix(int value) {
 		if (value < 2 || value % 2 != 0) {
 			System.out.println("Value does not match the condition!");
+			System.out.println();
 
 			return null;
 		}
@@ -43,7 +44,7 @@ public class Matrix04 {
 		return matrix;
 	}
 
-	public static void fillMatrixAccordingToCondition(int[][] matrix, int value) {
+	private static void fillMatrixAccordingToCondition(int[][] matrix, int value) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -67,7 +68,7 @@ public class Matrix04 {
 		}
 	}
 
-	public static void printMatrix(int[][] matrix) {
+	private static void printMatrix(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}

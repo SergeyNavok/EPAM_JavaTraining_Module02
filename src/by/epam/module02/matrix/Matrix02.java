@@ -26,7 +26,7 @@ public class Matrix02 {
 		printDiagonalElements(matrix);
 	}
 
-	public static void fillWithRandomPositiveValues(int[][] matrix) {
+	private static void fillWithRandomPositiveValues(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -38,7 +38,7 @@ public class Matrix02 {
 		}
 	}
 
-	public static void printMatrix(int[][] matrix) {
+	private static void printMatrix(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -52,7 +52,7 @@ public class Matrix02 {
 		}
 	}
 
-	public static void printDiagonalElements(int[][] matrix) {
+	private static void printDiagonalElements(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return;
 		}
@@ -65,7 +65,7 @@ public class Matrix02 {
 		column = matrix[0].length;
 
 		if (!isSquareMatrix(matrix)) {
-			System.out.println("Print will be made with an equal aspect ratio.");
+			System.out.println("The matrix will be printed with a square aspect ratio:");
 
 			line = line > column ? column : line;
 			column = line < column ? line : column;
@@ -87,7 +87,7 @@ public class Matrix02 {
 		}
 	}
 
-	public static boolean isSquareMatrix(int[][] matrix) {
+	private static boolean isSquareMatrix(int[][] matrix) {
 		if (Objects.isNull(matrix)) {
 			return false;
 		}

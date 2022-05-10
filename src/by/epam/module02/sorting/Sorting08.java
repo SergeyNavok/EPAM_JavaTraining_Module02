@@ -2,8 +2,6 @@ package by.epam.module02.sorting;
 
 import java.util.Arrays;
 
-import by.epam.module02.decomposition.Fraction;
-
 /*
 Даны дроби p1/q1, p2/q2, ..., pn/qn (p, q - натуральные). 
 Составить программу, которая приводит эти дроби к общему знаменателю и упорядочивает их в порядке возрастания.
@@ -31,7 +29,7 @@ public class Sorting08 {
 		System.out.println("Array of fractions after sorting: " + Arrays.toString(fractions));
 	}
 
-	public static void bringToCommonDenominator(Fraction[] fractions) {
+	private static void bringToCommonDenominator(Fraction[] fractions) {
 		if (fractions.length < 2) {
 			System.out.println("Nothing to bring to a common denominator!");
 
@@ -58,7 +56,7 @@ public class Sorting08 {
 		}
 	}
 
-	public static int greatestCommonMultiple(int a, int b) {
+	private static int greatestCommonMultiple(int a, int b) {
 		int temp;
 
 		while (b != 0) {
@@ -70,7 +68,7 @@ public class Sorting08 {
 		return a;
 	}
 
-	public static int leastCommonDivisor(int a, int b) {
+	private static int leastCommonDivisor(int a, int b) {
 		int result;
 
 		result = a * b / greatestCommonMultiple(a, b);
@@ -78,7 +76,7 @@ public class Sorting08 {
 		return result;
 	}
 
-	public static void sortInAscendingOrderConvertedFractions(Fraction[] fractions) {
+	private static void sortInAscendingOrderConvertedFractions(Fraction[] fractions) {
 		if (fractions.length < 2) {
 			System.out.println("Nothing to sort!");
 

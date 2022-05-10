@@ -35,7 +35,7 @@ public class Sorting05 {
 		sortingArray(array);
 	}
 
-	public static void sortingArray(int[] array) {
+	private static void sortingArray(int[] array) {
 		int indexToInsert;
 
 		indexToInsert = 0;
@@ -53,7 +53,7 @@ public class Sorting05 {
 		System.out.println();
 	}
 
-	public static int binarySearch(int[] array, int indexElement) {
+	private static int binarySearch(int[] array, int indexElement) {
 		if (array[indexElement] < array[0]) {
 			return 0;
 		}
@@ -79,7 +79,7 @@ public class Sorting05 {
 		return middleIndex;
 	}
 
-	public static void moveValueInArrayByIndex(int[] array, int indexElement, int indexToInsert) {
+	private static void moveValueInArrayByIndex(int[] array, int indexElement, int indexToInsert) {
 		int tempValue;
 
 		tempValue = array[indexElement];
